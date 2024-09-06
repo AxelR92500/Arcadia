@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#footer {
+    background-color: lightblue;
+    color: black;
+
+}
+
+nav {
+    min-height: 12vh;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+li {
+    text-transform: uppercase;
+}
+
+#firstPic {
+    
+}
+
+#lion {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#train {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#perroquet {
+    height: 660px;
+    width: 100%;
+    object-fit: cover;
+}
