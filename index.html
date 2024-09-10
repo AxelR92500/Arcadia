@@ -3,99 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>Le zoo d'Arcadia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Nerko+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
-    <div id="header">
-        <nav>
-            <ul>
-                <li><a href="#"><img src="logo-arcadia.png" alt="Logo du zoo d'Arcadia" id="logo-header"></a></li> 
-                <li><a href="#"></a>Les animaux</li>
-                <li><a href="#"></a>Nos services</li>
-                <li><a href="#"></a>Contact</li>
-                <li><a href="#"></a>Connexion</li>
-            </ul>           
+
+    <!--HEADER-->
+    <header>
+        <nav id="firstNavbar">
+            <ul class="sidebar">
+                <li onclick="fermerMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="#">Les animaux</a></li>
+                <li><a href="#">Nos services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li id="last"><a href="#">Connexion</a></li>
+            </ul>
+            <ul class="side">
+                <li><a href="#">Arcadia</a></li>
+                <li class="hideOnMobile"><a href="#">Les animaux</a></li>
+                <li class="hideOnMobile"><a href="#">Nos services</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="hideOnMobile"><a href="#">Connexion</a></li>                
+                <li class="menu-button" onclick="afficheMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
         </nav>
-    </div>
+    </header>
+    <!--FIN DU HEADER-->
+
+
+
+
     <div id="firstPic">
-        <img src="lion habitats.png" id="lion" alt="Image d'un lion">
+        <img src="/images/lion habitats.png" id="lion" alt="Image d'un lion">
     </div>
+
     <div id="introContainer">
         <div id="intro">
             <h2>Le zoo d’Arcadia, un monde sauvage en plein cœur de la Bretagne</h3>
             <p>Bienvenue au Zoo de Brocéliande, un havre de biodiversité niché au cœur de la légendaire forêt de Brocéliande en Bretagne, depuis 1960. Ici, la magie des lieux se mêle à la richesse du monde animal, offrant une expérience unique où chaque visiteur peut découvrir une incroyable variété d'animaux, soigneusement répartis par habitat. De la majestueuse savane africaine aux mystères de la jungle tropicale, en passant par les montagnes escarpées et les marais luxuriants, chaque zone du zoo recrée fidèlement les écosystèmes naturels, permettant à nos pensionnaires de s'épanouir dans un cadre authentique. Explorez un monde sauvage en plein cœur de la Bretagne, où la nature et la légende se rencontrent.</p>
         </div>
-
     </div>
     
     <div id="habitats">
         <div id="firstHabitat" class="habitatsContainer">
-            <img src="lion-svgrepo-com (1).svg" class="svgPic">
+            <img src="./svg/lion-svgrepo-com (1).svg" class="svgPic">
             <h3>La savane</h3>
         </div>
         <div id="secondHabitat" class="habitatsContainer">
-            <img src="gorilla.svg" class="svgPic">
+            <img src="./svg/gorilla.svg" class="svgPic">
             <h3>La jungle</h3>
         </div>
         <div id="thirdHabitat" class="habitatsContainer">
-            <img src="bear.svg" class="svgPic">
+            <img src="./svg/bear.svg" class="svgPic">
             <h3>La montagne</h3>
         </div>
         <div id="fourthHabitat" class="habitatsContainer">
-            <img src="crocodile.svg" class="svgPic">
+            <img src="./svg/crocodile.svg" class="svgPic">
             <h3>Les marais</h3>
         </div>
     </div>
+
     <div id="secondPic">
-        <img src="petittrain.jpeg" id="train" alt="Petit train">
+        <img src="/images/petittrain.jpeg" id="train" alt="Petit train">
     </div>
-    <div id="services">
+    <div id="introServices">
         <h2>découvrez les services du zoo</h2>
-        <div id="cardContainer">
-            <div id="firstService" class="cardService">
-                <img src="petittrain.jpeg" id="trainService" alt="Petit train" class="servicesPic">
-                <h4>Balade en petit train</h4>
-                <p>Embarquez pour une aventure inoubliable à bord de notre petit train, qui vous emmène à travers les différents habitats du zoo. Installez-vous confortablement et laissez-vous guider au plus près des animaux, tout en découvrant les merveilles de la nature dans une balade ludique et familiale.</p>
-            </div>
-            <div id="secondService" class="cardService">
-                <img src="restaurant.jpeg" id="restaurantService" alt="Restaurant" class="servicesPic">
-                <h4>Restaurants</h4>
-                <p>Faites une pause gourmande dans nos restaurants, où une variété de plats savoureux vous attend. Que vous souhaitiez déguster une cuisine traditionnelle, un repas rapide ou une collation, nos espaces de restauration offrent une expérience culinaire pour tous les goûts, au cœur de la nature du zoo.</p>
-            </div>
-            <div id="thirdService" class="cardService">
-                <img src="guide.jpeg" id="guideService" alt="Visite guidée du zoo" class="servicesPic">
-                <h4>Visite guidée</h4>
-                <p>Découvrez les secrets du zoo lors de nos visites guidées, où nos experts vous emmènent à la rencontre des animaux et partagent des histoires fascinantes sur leur vie et leurs habitats. Plongez au cœur de la faune sauvage avec une expérience enrichissante et interactive.</p>
-            </div>
-        </div>
     </div>
+    
+
+<!--CARDS SERVICES-->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="/images/petittrain.jpeg" alt="Petit train" class="servicesPic">
+                    <div class="card-body">
+                        <h5 class="card-title">Balade en petit train</h5>
+                        <p class="card-text">Embarquez pour une aventure inoubliable à bord de notre petit train, qui vous emmène à travers les différents habitats du zoo. Installez-vous confortablement et laissez-vous guider au plus près des animaux, tout en découvrant les merveilles de la nature dans une balade ludique et familiale.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="/images/restaurant.jpeg" alt="Restaurant" class="servicesPic">
+                    <div class="card-body">
+                        <h5 class="card-title">Restaurants</h5>
+                        <p class="card-text">Faites une pause gourmande dans nos restaurants, où une variété de plats savoureux vous attend. Que vous souhaitiez déguster une cuisine traditionnelle, un repas rapide ou une collation, nos espaces de restauration offrent une expérience culinaire pour tous les goûts, au cœur de la nature du zoo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <img src="/images/guide.jpg" alt="Visite guidée" class="servicesPic">
+                    <div class="card-body">
+                        <h5 class="card-title">Visite guidée</h5>
+                        <p class="card-text">Découvrez les secrets du zoo lors de nos visites guidées, où nos experts vous emmènent à la rencontre des animaux et partagent des histoires fascinantes sur leur vie et leurs habitats. Plongez au cœur de la faune sauvage avec une expérience enrichissante et interactive.</p>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <!-- FIN CARDS -->
+
+    
     <div id="thirdPic">
-        <img src="perroquet.jpeg" alt="Perroquet" id="perroquet">
+        <img src="/images/perroquet.jpeg" alt="Perroquet" id="perroquet">
     </div>
-    <div id="reviews">
+
+    <div id="introReviews">
         <h2>Les derniers avis du zoo</h2>
-        <div id="reviewsContainer">
-            <div id="firstReview" class="cardReview">
-                <h3>5/5</h3>
-                <h5>Louis</h5>
-                <p>Une expérience incroyable ! Le Zoo Arcadia est un véritable paradis pour les amateurs d'animaux. Les habitats sont parfaitement recréés, et la diversité des espèces est impressionnante. Nous avons particulièrement apprécié la visite guidée qui était à la fois informative et captivante. Nous reviendrons avec plaisir !</p>
+    </div>
+
+
+    <!--CARDS AVIS DU ZOO-->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center border">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">5/5</h5>
+                        <h6 class="card-subtitle">Louis</h6>
+                        <p class="card-text">Une expérience incroyable ! Le Zoo Arcadia est un véritable paradis pour les amateurs d'animaux. Les habitats sont parfaitement recréés, et la diversité des espèces est impressionnante. Nous avons particulièrement apprécié la visite guidée qui était à la fois informative et captivante. Nous reviendrons avec plaisir !</p>
+                    </div>
+                </div>
             </div>
-            <div id="secondReview" class="cardReview">
-                <h3>5/5</h3>
-                <h5>Joséphine</h5>
-                <p>Nous avons passé une journée mémorable au Zoo Arcadia. Les animaux sont en pleine forme et les enclos sont spacieux et bien entretenus. Le petit train est une manière agréable de voir tout le zoo sans se fatiguer. Un lieu que je recommande vivement pour une sortie en famille !</p>
+            <div class="col-md-4">
+                <div class="card text-center border">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">5/5</h5>
+                        <h6 class="card-subtitle">Alexandre</h6>
+                        <p class="card-text">Nous avons passé une journée mémorable au Zoo Arcadia. Les animaux sont en pleine forme et les enclos sont spacieux et bien entretenus. Le petit train est une manière agréable de voir tout le zoo sans se fatiguer. Un lieu que je recommande vivement pour une sortie en famille !</p>
+                    </div>
+                </div>
             </div>
-            <div id="thirdReview" class="cardReview">
-                <h3>4/5</h3>
-                <h5>Alexandre</h5>
-                <p>Le zoo est fantastique avec des animaux magnifiques et des habitats bien conçus. Cependant, nous avons trouvé que les toilettes étaient un peu sales, ce qui a légèrement gâché notre visite. Dommage, car tout le reste était impeccable. Nous reviendrons malgré tout, en espérant que ce point sera amélioré.</p>
+            <div class="col-md-4">
+                <div class="card text-center border">
+                    <div class="card-body">
+                        <h3 class="card-title fw-bold">4/5</h5>
+                        <h6 class="card-subtitle">Joséphine</h6>
+                        <p class="card-text">Le zoo est fantastique avec des animaux magnifiques et des habitats bien conçus. Cependant, nous avons trouvé que les toilettes étaient un peu sales, ce qui a légèrement gâché notre visite. Dommage, car tout le reste était impeccable. Nous reviendrons malgré tout, en espérant que ce point sera amélioré.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <!--FIN CARDS AVIS DU ZOO-->
+
+    <div id="btnReviews">
+        <button type="button" class="btn text-uppercase fw-bold text-center border m-4">Laissez votre avis</button>
+    </div>
+
+
     <footer>
         <div class="footerContainer">
             <div class="cardFooter" id="contact">
@@ -106,55 +172,17 @@
             </div>
 
             <div class="cardFooter" id="logo">
-                <img src="logo-arcadia.png">
+                <img src="/images/logo-arcadia.png">
             </div>
 
             <div class="cardFooter" id="follow">
                 <h3>Nous suivre</h3>
-                <img src="facebook1.svg" alt="Facebook" id="facebook" class="svgFooter">
-                <img src="instagram.svg" alt="Instagram" id="instagram" class="svgFooter">
+                <img src="/svg/facebook1.svg" alt="Facebook" id="facebook" class="svgFooter">
+                <img src="/svg/instagram.svg" alt="Instagram" id="instagram" class="svgFooter">
             </div>
         </div>
-        <!-- <div class="footerContainer">
-            <div class="bloc contact">
-                <h3>Nous contacter</h3>
-                <ul class="info">
-                    <li><img src="map.svg" id="mapPic" class="svgFooter">39 avenue de la République 29000 Quimper</li>
-                    <li><img src="phone.svg" id="phonePic" class="svgFooter">01.02.03.04.05</li>
-                    <li> <img src="mail.svg" id="mailPic" class="svgFooter">arcadiazoo@gmail.com</li>
-                </ul>
-            </div>
-
-            <div class="bloc logo-footer" id="logo">
-                <img src="logo-arcadia.png" id="logo-footer" alt="Logo du zoo">
-                <h5>Ouvert toute l’année 7 J/7 à partir de 10h00</h5>  
-            </div>
-
-            <div class="bloc socialMedia-footer" id="socialMedia">
-                <h3>Nous suivre</h3>
-                <img src="facebook1.svg" alt="Facebook" id="facebook" class="svgFooter">
-                <img src="instagram.svg" alt="Instagram" id="instagram" class="svgFooter">
-            </div>
- -->
-           <!-- <div id="contact" class="cardFooter">
-                <h3>Nous contacter</h3>
-                
-            </div>
-    
-            <div id="logo" class="cardFooter">
-                <img src="logo-arcadia.png" id="logo-footer" alt="Logo du zoo">
-                <h5>Ouvert toute l’année 7 J/7 à partir de 10h00</h5>  
-            </div>
-    
-            <div id="socialMedia" class="cardFooter">
-                <h3>Nous suivre</h3>
-                <img src="facebook1.svg" alt="Facebook" id="facebook" class="svgFooter">
-                <img src="instagram.svg" alt="Instagram" id="instagram" class="svgFooter">
-            </div> -->
-        <!-- </div> -->
-
     </footer>
     
-    
+<script src="script.js"></script>    
 </body>
 </html>
