@@ -15,21 +15,20 @@
     <title>Le zoo Arcadia</title>
 </head>
 <body>
-
     <!--HEADER-->
     <header>
         <nav id="firstNavbar">
             <ul class="sidebar">
                 <li onclick="fermerMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><a href="#">Les animaux</a></li>
-                <li><a href="#">Nos services</a></li>
+                <li><a href="animal.html">Les animaux</a></li>
+                <li><a href="services.html">Nos services</a></li>
                 <li><a href="#">Contact</a></li>
                 <li id="last"><a href="#">Connexion</a></li>
             </ul>
             <ul class="side">
-                <li><a href="#">Arcadia</a></li>
-                <li class="hideOnMobile"><a href="#">Les animaux</a></li>
-                <li class="hideOnMobile"><a href="#">Nos services</a></li>
+                <li><a href="index.html">Arcadia</a></li>
+                <li class="hideOnMobile"><a href="animal.html">Les animaux</a></li>
+                <li class="hideOnMobile"><a href="services.html">Nos services</a></li>
                 <li class="hideOnMobile"><a href="#">Contact</a></li>
                 <li class="hideOnMobile"><a href="#">Connexion</a></li>                
                 <li class="menu-button" onclick="afficheMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
@@ -37,9 +36,6 @@
         </nav>
     </header>
     <!--FIN DU HEADER-->
-
-
-
 
     <div id="firstPic">
         <img src="/images/lion habitats.png" id="lion" alt="Image d'un lion">
@@ -50,8 +46,7 @@
             <h2>Le zoo d’Arcadia, un monde sauvage en plein cœur de la Bretagne</h3>
             <p>Bienvenue au Zoo de Brocéliande, un havre de biodiversité niché au cœur de la légendaire forêt de Brocéliande en Bretagne, depuis 1960. Ici, la magie des lieux se mêle à la richesse du monde animal, offrant une expérience unique où chaque visiteur peut découvrir une incroyable variété d'animaux, soigneusement répartis par habitat. De la majestueuse savane africaine aux mystères de la jungle tropicale, en passant par les montagnes escarpées et les marais luxuriants, chaque zone du zoo recrée fidèlement les écosystèmes naturels, permettant à nos pensionnaires de s'épanouir dans un cadre authentique. Explorez un monde sauvage en plein cœur de la Bretagne, où la nature et la légende se rencontrent.</p>
         </div>
-    </div>
-    
+    </div>    
     <div id="habitats">
         <div id="firstHabitat" class="habitatsContainer">
             <img src="./svg/lion-svgrepo-com (1).svg" class="svgPic">
@@ -70,14 +65,12 @@
             <h3>Les marais</h3>
         </div>
     </div>
-
     <div id="secondPic">
         <img src="/images/petittrain.jpeg" id="train" alt="Petit train">
     </div>
     <div id="introServices">
         <h2>découvrez les services du zoo</h2>
-    </div>
-    
+    </div>    
 
 <!--CARDS SERVICES-->
     <div class="container mt-4">
@@ -112,22 +105,19 @@
         </div>        
     </div>
     <!-- FIN CARDS -->
-
     
     <div id="thirdPic">
         <img src="/images/perroquet.jpeg" alt="Perroquet" id="perroquet">
     </div>
-
     <div id="introReviews">
         <h2>Les derniers avis du zoo</h2>
     </div>
-
 
     <!--CARDS AVIS DU ZOO-->
     <div class="container mt-4">
         <div class="row">
             <div class="col-md-4">
-                <div class="card text-center border">
+                <div class="card text-center border bg-white">
                     <div class="card-body">
                         <h3 class="card-title fw-bold">5/5</h5>
                         <h6 class="card-subtitle">Louis</h6>
@@ -136,7 +126,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card text-center border">
+                <div class="card text-center border bg-white">
                     <div class="card-body">
                         <h3 class="card-title fw-bold">5/5</h5>
                         <h6 class="card-subtitle">Alexandre</h6>
@@ -145,7 +135,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card text-center border">
+                <div class="card text-center border bg-white">
                     <div class="card-body">
                         <h3 class="card-title fw-bold">4/5</h5>
                         <h6 class="card-subtitle">Joséphine</h6>
@@ -160,29 +150,19 @@
     <div id="btnReviews">
         <button type="button" class="btn text-uppercase fw-bold text-center border m-4">Laissez votre avis</button>
     </div>
-
-
-    <footer>
-        <div class="footerContainer">
-            <div class="cardFooter" id="contact">
-                <h3>Nous contacter</h3>
-                <p>39 Avenue de la République, 29000 Quimper</p>
-                <p>01.02.03.04.05</p>
-                <p>arcadiazoo@gmail.com</p>
-            </div>
-
-            <div class="cardFooter" id="logo">
-                <img src="/images/logo-arcadia.png">
-            </div>
-
-            <div class="cardFooter" id="follow">
-                <h3>Nous suivre</h3>
-                <img src="/svg/facebook1.svg" alt="Facebook" id="facebook" class="svgFooter">
-                <img src="/svg/instagram.svg" alt="Instagram" id="instagram" class="svgFooter">
-            </div>
-        </div>
-    </footer>
-    
+    <footer id="footer">
+        <ul class="contact-footer">
+            <li>Nous contacter</li>
+            <li>39 Avenue de la République</li>
+            <li>29000 Quimper</li>
+            <li>01.02.03.04.05</li>
+            <li>arcadia-zoo@gmail.com</li>
+        </ul>
+        <ul class="logo-footer">
+            <li><a href="index.html">Arcadia</a></li>
+            <li><img src="/images/zoologo1.png"></li>
+        </ul>
+    </footer>    
 <script src="script.js"></script>    
 </body>
 </html>
