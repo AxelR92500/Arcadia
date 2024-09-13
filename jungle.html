@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="jungle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Nerko+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <title>Le zoo Arcadia</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header>
+        <nav id="firstNavbar">
+            <ul class="sidebar">
+                <li onclick="fermerMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="animal.html">Les animaux</a></li>
+                <li><a href="services.html">Nos services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li id="last"><a href="#">Connexion</a></li>
+            </ul>
+            <ul class="side">
+                <li><a href="index.html">Arcadia</a></li>
+                <li class="hideOnMobile"><a href="animal.html">Les animaux</a></li>
+                <li class="hideOnMobile"><a href="services.html">Nos services</a></li>
+                <li class="hideOnMobile"><a href="#">Contact</a></li>
+                <li class="hideOnMobile"><a href="#">Connexion</a></li>                
+                <li class="menu-button" onclick="afficheMenu()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--FIN DU HEADER-->
+
+    <div id="introContainer">
+        <div id="intro">
+            <h2>Découvrer l'habitat de la jungle</h2>
+            <p>Plongez dans l'univers fascinant de la jungle, un écosystème luxuriant où la vie s'épanouit dans une végétation dense et une biodiversité exceptionnelle. Située principalement dans les régions tropicales autour de l'équateur, la jungle offre un cadre idéal pour une flore et une faune incroyablement variées.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img src="/images/jungle/jungle-tigre.jpg" class="junglePics" alt="Un tigre">
+                    <h3 class="card-title">Tigre du Bengale</h3>
+                    <h6 class="card-subtitle">Tigrou</h6>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img src="/images/jungle/jungle-gorille.jpg" class="junglePics" alt="Un Gorille">
+                    <h3 class="card-title">Gorille de Grauer</h3>
+                    <h6 class="card-subtitle">Koba</h6>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img src="/images/jungle/jungle-python.jpg" class="junglePics" alt="Un Python">
+                    <h3 class="card-title">Python molure</h3>
+                    <h6 class="card-subtitle">Jafar</h6>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img src="/images/jungle/jungle-chimp.jpg" class="junglePics" alt="Un Chimpanzé">
+                    <h3 class="card-title">Chimpanzé</h3>
+                    <h6 class="card-subtitle">Cesar</h6>
+                </div>
+            </div>
+            
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img src="/images/jungle/animaux-jungle-065915.jpg" class="junglePics" alt="Un Toucan">
+                    <h3 class="card-title">Toucan de Guyane</h3>
+                    <h6 class="card-subtitle">Toco</h6>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img src="/images/jungle/jungle-macaque.jpg" class="junglePics" alt="Un Macaque">
+                    <h3 class="card-title">Macaque de Java</h3>
+                    <h6 class="card-subtitle">Macao</h6>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img src="/images/jungle/jungle-capucin.jpg" id="capucin" class="junglePics" alt="Un Singe Capucin">
+                    <h3 class="card-title">Singe Capucin</h3>
+                    <h6 class="card-subtitle">Coco</h6>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img src="/images/jungle/jungle-perroquet.jpg" id="perroquet" class="junglePics" alt="Un Perroquet">
+                    <h3 class="card-title">Ara bleu</h3>
+                    <h6 class="card-subtitle">Lila</h6>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="card text-center">
+                    <img src="/images/jungle/jungle-paresseux.jpg" id="paresseux" class="junglePics" alt="Un Paresseux">
+                    <h3 class="card-title">Paresseux</h3>
+                    <h6 class="card-subtitle">Flama</h6>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <!--FOOTER-->
+    <footer id="footer">
+        <ul class="contact-footer">
+            <li>Nous contacter</li>
+            <li>39 Avenue de la République</li>
+            <li>29000 Quimper</li>
+            <li>01.02.03.04.05</li>
+            <li>arcadia-zoo@gmail.com</li>
+        </ul>
+
+        <ul class="logo-footer">
+            <li><a href="index.html">Arcadia</a></li>
+            <li><img src="/images/zoologo1.png"></li>
+        </ul>
+    </footer>
+    <!-- FIN DU FOOTER -->
+
+<script src="jungle.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+</body>
+</html>
