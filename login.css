@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    overflow-x: hidden;
+}
+
+
+body {
+    height: 100%;
+    background-image: url(/images/panda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: #fffde7d1;
+    
+    /* background-color: rgba(15, 214, 15, 0.259); */
+}
+
+#firstNavbar {
+    /* background-color: rgba(15, 214, 15, 0.215); */
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.3);
+}
+
+#firstNavbar ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#firstNavbar li {
+    height: 75px;
+}
+
+
+#firstNavbar li:first-child {
+    margin-right: auto;
+}
+
+#firstNavbar li:last-child {
+    margin-left: auto;
+}
+
+#firstNavbar a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: green;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+    border-radius: 5px;
+}
+
+.side li:first-child a {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 900;
+    font-size: 26px;
+    color: green;
+}
+
+
+#firstNavbar a:hover{
+    background-color: #F2F7F4;
+    transition: 0.3s;
+}
+
+#firstNavbar .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.menu-button {
+    display: none;
+}
+
+.sidebar li, .sidebar a {
+    width: 100%;
+}
+
+.side li.isActive a{
+    color: #4a00ba !important;
+}
+
+.sidebar li.isActive a{
+    color: #4a00ba !important;
+}
+
+
+@media (max-width: 908px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+#loginContainer {
+    display: grid;
+    place-items: center;
+    margin: auto 0;
+}
+
+#loginContainer h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 900;
+    padding: 15px;
+    color: white;
+}
+
+#login {
+    display: grid;
+    place-items: center;
+    height: 280px;
+    width: 500px;
+    border-radius: 5px;
+    background-color: rgba(55, 67, 0, 0.571);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.inputContainer {
+    display: grid;
+    place-items: center;
+    width: 100%;
+}
+
+.input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    letter-spacing: 1px;
+    
+    
+}
+
+button {
+    width: 50%;
+    border-radius: 15px;
+    padding: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+@media (max-width: 1000px) {
+    body {
+        background-size: auto;
+    }
+}
