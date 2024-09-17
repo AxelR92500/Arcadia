@@ -87,172 +87,74 @@ body {
     width: 100%;
 }
 
-#lion {
-    height: 320px;
-    width: 100%;
-    object-fit: cover;
+.side li.isActive a{
+    color: #4a00ba !important;
 }
 
+.sidebar li.isActive a{
+    color: #4a00ba !important;
+}
 
-
-#introContainer {
-    font-family: "Lato", sans-serif;
-    height: 75%;
-    width: 90%;
+#container {
+    background-image: url(/images/paon.jpg);
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#form-container {
+    background-color: rgba(255, 255, 255, 0.849);
+    height: 450px;
+    width: 40%;
     padding: 15px;
-    margin: 0 auto;
+    border-radius: 5px;
 }
 
-#intro h2 {
-    font-size: 2rem;
+#form-container h2 {
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 3px;
-    text-align: center;
-    font-weight: 800;
+    font-weight: 900;
+    margin: 15px;
 }
 
-#intro p {
-    text-align: center;
-    padding-top: 30px;
-    font-size: 1.4rem;
-    letter-spacing: 2px;
-    font-style: italic;
-}
 
-#habitats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-}
-
-#habitats a {
-    text-decoration: none;
-}
-
-.habitatsContainer {
+#form-container input {
+    width: 100%;
     padding: 10px;
-    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
 
-.svgPic {
-    width: 222px;
-    height: auto;
+#description {
+    width: 100%;
+    letter-spacing: 1px;
+    border-radius: 4px;
 }
 
-#habitats h3 {
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 800;
-    text-align: center;
-}
 
-#firstHabitat h3 {
-    color: #704526;
-}
-
-#secondHabitat h3 {
-    color: #309834;
-}
-
-#thirdHabitat h3 {
-    color: #7B6D6D;
-}
-
-#fourthHabitat h3 {
-    color: #3D12B9;
-}
-
-.habitatsContainer:hover {
+#form-container button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 4px;
     cursor: pointer;
-}
-
-#introServices {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-#introServices h2 {
-    font-weight: 800;
-    padding: 15px;
-    text-align: center;
-}
-
-#train {
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-    margin-top: 25px;
-}
-
-#services h2, #reviews h2 {
-    font-size: 35px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    font-weight: 800;
-    text-align: center;
-    margin: 40px;
-}
-
-
-.card {
-    border: none;
-    background-color: #fffde7d1;
-}
-
-.card-body h5 {
-    text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 900;
-}
-
-.card-body p {
-    font-style: italic;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-
-.servicesPic {
-    width: 500px;
-    height: 232px;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-#perroquet {
-    height: 500px;
-    width: 100%;
-    object-fit: cover;
-    object-position: top right;
-}
-
-#introReviews {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    padding: 25px;
+    width: 100%;
 }
 
-#introReviews h2 {
-    text-align: center;
-    font-weight: 900;
-}
-
-#btnReviews {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #footer {
     display: flex;
@@ -314,11 +216,3 @@ body {
         display: block;
     }
 }
-
-@media (max-width : 600px) {
-    #habitats {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-

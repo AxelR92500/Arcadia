@@ -9,12 +9,9 @@
 
 body {
     height: 100%;
-    background-image: url(/images/panda.jpg);
+    background-image: url(/images/zoo-kids.jpg);
+    opacity: 1;
     background-size: cover;
-    background-repeat: no-repeat;
-    /* background-color: #fffde7d1;
-    
-    /* background-color: rgba(15, 214, 15, 0.259); */
 }
 
 #firstNavbar {
@@ -132,7 +129,7 @@ body {
     height: 280px;
     width: 500px;
     border-radius: 5px;
-    background-color: rgba(55, 67, 0, 0.571);
+    background-color: rgba(0, 0, 0, 0.714);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     
 }
